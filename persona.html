@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PASSAGE — Editable Proto-Personas Board</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+  body { padding: 40px 20px; background: #07040d; }
+  .board-container { max-width: 1440px; margin: auto; }
+  .board-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .board-nav a { color: #d6b9ff; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+  .board-nav a:hover { color: #fff; }
+</style>
+</head>
+<body>
+<div class="board-container">
+  <div class="board-nav">
+    <a href="index.html">← Back to Full Case Study</a>
+    <div style="display:flex; gap: 20px;">
+      <a href="screens.html">View 7-Screen Board →</a>
+      <a href="https://github.com/LakhanSingh07/passage-case-study" target="_blank">GitHub Repo ↗</a>
+    </div>
+  </div>
+
+  <header style="margin-bottom: 40px;">
+    <div class="eyebrow">PASSAGE · RESEARCH SYNTHESIS · 2187</div>
+    <h1 style="font-size: 52px; line-height: 1.1; margin: 10px 0 16px;">Designing for different levels of confidence, familiarity, and journey complexity.</h1>
+    <p style="color: var(--muted); font-size: 18px; max-width: 880px; line-height: 1.6;">
+      These proto-personas were synthesized from spaceflight physical constraints, human-rated transport rules, and 2187 orbital assumptions. They directly informed interface language, recovery logic, and trust signals.
+    </p>
+  </header>
+
+  <div class="grid3" style="align-items: stretch;">
+    <!-- Aarav Mehta -->
+    <article class="persona-card">
+      <div class="portrait p1">
+        <div class="overlay">
+          <span class="role">P1 · PRIMARY</span>
+          <h3>Aarav Mehta</h3>
+          <p class="subtitle">Systems Engineer · Frequent Traveller</p>
+        </div>
+      </div>
+      <div class="persona-body">
+        <blockquote class="persona-quote">“Show me the most reliable way there, what I do next, and what changes if something goes wrong.”</blockquote>
+        <div class="persona-meta">
+          <div class="meta-box"><span>Age</span><b>31</b></div>
+          <div class="meta-box"><span>Origin</span><b>India</b></div>
+          <div class="meta-box"><span>Tech Comfort</span><b>Very high</b></div>
+          <div class="meta-box"><span>Travel Style</span><b>Frequent</b></div>
+        </div>
+        <div class="persona-details">
+          <div class="detail-box">
+            <h4>Goals</h4>
+            <ul>
+              <li>Reach destinations reliably</li>
+              <li>Minimise avoidable delays</li>
+              <li>Keep onward transfers protected</li>
+              <li>Decision-critical tech detail only</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h4>Pain Points</h4>
+            <ul>
+              <li>Unclear transfer risk</li>
+              <li>Last-minute schedule changes</li>
+              <li>Operational jargon overload</li>
+              <li>Restarting route after disruption</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h4>Behaviour</h4>
+            <ul>
+              <li>Compares duration before cost</li>
+              <li>Checks spacecraft readiness</li>
+              <li>Accepts multi-hop if confident</li>
+              <li>Wants concise evidence updates</li>
+            </ul>
+          </div>
+          <div class="detail-box accent">
+            <h4>PASSAGE Needs</h4>
+            <ul>
+              <li>Journey-first recommendations</li>
+              <li>Protected connections</li>
+              <li>Data freshness indicators</li>
+              <li>Preserve viable onward legs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="persona-journey">
+          <b>Journey Context</b>
+          <span>Lunar Gateway → Europa Research Colony · approx. 96 days · 3 spacecraft · 2 transfers</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Maya Chen -->
+    <article class="persona-card">
+      <div class="portrait p2">
+        <div class="overlay">
+          <span class="role">P2 · SECONDARY</span>
+          <h3>Maya Chen</h3>
+          <p class="subtitle">Documentary Researcher · Infrequent Traveller</p>
+        </div>
+      </div>
+      <div class="persona-body">
+        <blockquote class="persona-quote">“Tell me where I’m going, what happens at each stop, and whether the connection is still safe.”</blockquote>
+        <div class="persona-meta">
+          <div class="meta-box"><span>Age</span><b>26</b></div>
+          <div class="meta-box"><span>Origin</span><b>East Asia</b></div>
+          <div class="meta-box"><span>Tech Comfort</span><b>Medium–high</b></div>
+          <div class="meta-box"><span>Travel Style</span><b>Infrequent</b></div>
+        </div>
+        <div class="persona-details">
+          <div class="detail-box">
+            <h4>Goals</h4>
+            <ul>
+              <li>Understand full route upfront</li>
+              <li>Feel safe across unfamiliar hubs</li>
+              <li>Know what happens at transfers</li>
+              <li>Travel without orbital mechanics</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h4>Pain Points</h4>
+            <ul>
+              <li>Dense technical terminology</li>
+              <li>Unclear multi-leg routes</li>
+              <li>Uncertainty in ship conditions</li>
+              <li>Fear of missing a connection</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h4>Behaviour</h4>
+            <ul>
+              <li>Prefers guided recommendations</li>
+              <li>Relies on visual route maps</li>
+              <li>Reads safety details carefully</li>
+              <li>Needs reassurance after changes</li>
+            </ul>
+          </div>
+          <div class="detail-box accent">
+            <h4>PASSAGE Needs</h4>
+            <ul>
+              <li>Visual journey storytelling</li>
+              <li>Plain-language transfer status</li>
+              <li>Habitability & safety cues</li>
+              <li>Clear next physical action</li>
+            </ul>
+          </div>
+        </div>
+        <div class="persona-journey">
+          <b>Journey Context</b>
+          <span>First long-haul assignment beyond Mars; prioritises clarity and trust over raw speed.</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Dr. Lena Ortiz -->
+    <article class="persona-card">
+      <div class="portrait p3">
+        <div class="overlay">
+          <span class="role">P3 · SITUATIONAL</span>
+          <h3>Dr. Lena Ortiz</h3>
+          <p class="subtitle">Medical Specialist · Multi-Hop Traveller</p>
+        </div>
+      </div>
+      <div class="persona-body">
+        <blockquote class="persona-quote">“Connections are fine. I just need the whole journey to keep working.”</blockquote>
+        <div class="persona-meta">
+          <div class="meta-box"><span>Age</span><b>42</b></div>
+          <div class="meta-box"><span>Origin</span><b>International</b></div>
+          <div class="meta-box"><span>Tech Comfort</span><b>High</b></div>
+          <div class="meta-box"><span>Travel Style</span><b>Multi-hop</b></div>
+        </div>
+        <div class="persona-details">
+          <div class="detail-box">
+            <h4>Goals</h4>
+            <ul>
+              <li>Reach remote sites predictably</li>
+              <li>Maintain viable onward legs</li>
+              <li>Understand medical capability</li>
+              <li>Reduce mission schedule shock</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h4>Pain Points</h4>
+            <ul>
+              <li>Single-leg changes breaking all</li>
+              <li>Unclear medical capability</li>
+              <li>Disconnected operators</li>
+              <li>Manual re-planning at gateways</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h4>Behaviour</h4>
+            <ul>
+              <li>Comfortable with multi-transfers</li>
+              <li>Reviews mission constraints</li>
+              <li>Accepts longer routes if resilient</li>
+              <li>Values operational transparency</li>
+            </ul>
+          </div>
+          <div class="detail-box accent">
+            <h4>PASSAGE Needs</h4>
+            <ul>
+              <li>Route continuity intelligence</li>
+              <li>Medical support indicators</li>
+              <li>Impact summaries on disruption</li>
+              <li>Cross-operator booking logic</li>
+            </ul>
+          </div>
+        </div>
+        <div class="persona-journey">
+          <b>Journey Context</b>
+          <span>Relocation via Lunar, Mars and Jupiter gateways; high transfer tolerance, zero tolerance for full itinerary failure.</span>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <section style="margin-top: 60px;">
+    <div class="eyebrow">DESIGN TRANSLATION · WHAT THESE PERSONAS CHANGED</div>
+    <div class="imp-grid">
+      <div class="imp">
+        <b>Aarav Mehta (Primary)</b>
+        <span>Made reliability, protected transfers, and recovery impact first-class information on every card and itinerary view.</span>
+      </div>
+      <div class="imp">
+        <b>Maya Chen (Secondary)</b>
+        <span>Pushed the interface toward visual routes, plain language status cues, and confidence-building habitability signals.</span>
+      </div>
+      <div class="imp">
+        <b>Dr. Lena Ortiz (Situational)</b>
+        <span>Validated journey continuity as more critical than restarting search after one cancelled or rescheduled leg.</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 60px;">
+    <div class="eyebrow">GENERATED VISUAL REFERENCE BOARDS</div>
+    <p style="color: var(--muted); font-size: 15px; margin-top: 6px;">High-resolution presentation boards included as reference layers.</p>
+    <div class="persona-board-preview">
+      <div class="ref-card">
+        <img src="assets/persona_board_01.png" alt="PASSAGE Persona Board 01"/>
+        <div class="ref-cap">
+          <span>Persona Board 01 · Detailed Trait Matrix</span>
+          <a href="assets/persona_board_01.png" target="_blank" style="color:#d6b9ff; text-decoration:none;">Open Full Res ↗</a>
+        </div>
+      </div>
+      <div class="ref-card">
+        <img src="assets/persona_board_02.png" alt="PASSAGE Persona Board 02"/>
+        <div class="ref-cap">
+          <span>Persona Board 02 · Journey & Touchpoint Architecture</span>
+          <a href="assets/persona_board_02.png" target="_blank" style="color:#d6b9ff; text-decoration:none;">Open Full Res ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
